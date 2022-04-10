@@ -186,7 +186,7 @@ if (shuangren == true || siren == true || 订阅 != 'a' || stronger != 'a' || ti
         //toastLog('没有题库,正在下载题库，请等待！！！');
         threads.start(function () {
             var tiku = http.get(url).body.bytes();
-            //console.log(tiku)
+            console.log(tiku)
             files.writeBytes(path, tiku);
         });
     }
